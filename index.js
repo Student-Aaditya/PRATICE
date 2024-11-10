@@ -8,7 +8,8 @@ app.set("views", path.join(__dirname, "view"));
 app.set("view engine", "ejs");
 
 app.get("/",(req,res)=>{
-    res.render("index.ejs");
+    // res.render("index.ejs");
+    res.send("hello");
 })
 app.listen(port,(req,res)=>{
     console.log(`server working on ${port}`);
